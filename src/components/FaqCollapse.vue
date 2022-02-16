@@ -29,7 +29,9 @@
         </div>
       </div>
     </b-collapse>
-    <b-button type="is-primary" class="load-more-btn height-90" expanded><span class="default-text-base font-weight-700">LOAD MORE</span></b-button>
+    <b-button type="is-primary" class="load-more-btn height-90" expanded>
+      <span class="default-text-base font-weight-700">LOAD MORE</span>
+    </b-button>
   </section>
 </template>
 
