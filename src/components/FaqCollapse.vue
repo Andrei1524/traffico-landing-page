@@ -1,12 +1,16 @@
 <template>
   <section class="faq-collapses">
-    <b-loading :is-full-page="false" v-model="loading" :can-cancel="true"></b-loading>
+    <b-loading
+      v-model="loading"
+      :is-full-page="false"
+      :can-cancel="true"
+    />
     <b-collapse
+      v-for="(collapse, index) of collapsesData"
+      :key="index"
       class="card"
       :class="{'max-height-90': isOpen !== index}"
       animation="slide"
-      v-for="(collapse, index) of collapsesData"
-      :key="index"
       :open="isOpen === index"
       @open="isOpen = index"
     >
@@ -14,7 +18,8 @@
         <div
           class="card-header"
           role="button"
-          aria-controls="contentIdForA11y3">
+          aria-controls="contentIdForA11y3"
+        >
           <p class="card-header-title">
             {{ collapse.title }}
           </p>
@@ -31,7 +36,7 @@
       </div>
     </b-collapse>
     <b-button
-      v-if="totalItemsLength !== collapsesData.length"
+      v-if="totalItemsLength !== collapsesData.length "
       type="is-primary"
       class="load-more-btn height-90"
       expanded
@@ -46,7 +51,7 @@
 import axios from 'axios'
 
 export default {
-  name: 'collapse',
+  name: 'Collapse',
 
   data () {
     return {
