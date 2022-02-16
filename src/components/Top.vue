@@ -29,7 +29,6 @@ section {
 
 .intro {
   padding-top: 90px;
-  max-width: 741px;
 
   h1 {
     font-family: 'DM Serif Display', serif;
