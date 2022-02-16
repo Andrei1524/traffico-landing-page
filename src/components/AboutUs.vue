@@ -18,6 +18,8 @@
           </div>
           <div class="column is-half">
             <img
+              v-observe-visibility="isFigure1InView = true"
+              :class="{'animate__animated animate__slideInRight': isFigure1InView}"
               src="@/assets/images/landing-figure-about-1.png"
               alt=""
               class="figure-1"
@@ -27,6 +29,8 @@
         <div class="columns is-vcentered is-justify-content-space-between">
           <div class="column is-half">
             <img
+              v-observe-visibility="isFigure2InView = true"
+              :class="{'animate__animated animate__slideInLeft': isFigure2InView}"
               src="@/assets/images/landing-figure-about-2.svg"
               alt=""
               class="figure-2"
@@ -50,7 +54,11 @@
 
 export default {
   name: 'AboutUs',
-  components: {
+  data () {
+    return {
+      isFigure1InView: false,
+      isFigure2InView: false
+    }
   }
 }
 </script>
