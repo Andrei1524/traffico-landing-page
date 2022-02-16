@@ -10,15 +10,22 @@
           <img src="@/assets/images/landing-figure-faq.png" alt="" class="figure-1" v-animate-css="'slideInRight'">
         </div>
       </div>
+
+      <div class="faq-collapses">
+        <FaqCollapse />
+      </div>
     </div>
   </section>
 </template>
 
 <script>
 
+import FaqCollapse from '@/components/FaqCollapse'
+
 export default {
   name: 'Faq',
   components: {
+    FaqCollapse
   }
 }
 </script>
