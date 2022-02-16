@@ -2,11 +2,12 @@
   <div id="app">
     <Top />
     <img
-      v-observe-visibility="() => isTruckImageInView = true"
-      :class="{'animate__animated animate__slideInLeft': isTruckImageInView}"
       src="@/assets/images/landing-truck.svg"
       alt=""
       class="truck position-relative"
+      data-aos="fade-right"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine"
     >
     <AboutUs />
     <Faq />
