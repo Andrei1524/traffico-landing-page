@@ -1,11 +1,24 @@
 <template>
   <section class="top position-relative">
-    <img src="@/assets/images/landing-scene-cropped.svg" alt="" class="landing-scene-image">
+    <img
+      src="@/assets/images/landing-scene-cropped.svg"
+      alt
+      class="landing-scene-image"
+    >
     <Header />
     <div class="container">
       <div class="intro position-relative">
-        <h1 class="font-size-100px default-text is-size-3-mobile">Your awesome traffic permit consultant.</h1>
-        <b-button type="is-primary" class="default-btn font-weight-700 mt-6">GET STARTED</b-button>
+        <h1
+          class="font-size-100px default-text is-size-3-mobile"
+        >
+          Your awesome traffic permit consultant.
+        </h1>
+        <b-button
+          type="is-primary"
+          class="default-btn font-weight-700 mt-6"
+        >
+          GET STARTED
+        </b-button>
       </div>
     </div>
   </section>
@@ -26,12 +39,23 @@ export default {
 section {
   height: 100vh;
 }
-
 .intro {
   padding-top: 90px;
 
   h1 {
-    font-family: 'DM Serif Display', serif;
+    font-family: "DM Serif Display", serif;
+    line-height: 100%;
+  }
+}
+
+section {
+  height: 100vh;
+}
+.intro {
+  padding-top: 90px;
+
+  h1 {
+    font-family: "DM Serif Display", serif;
     line-height: 100%;
   }
 }
@@ -43,5 +67,3 @@ section {
     transform: translateY(-50%);
   }
 }
-
-</style>
