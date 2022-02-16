@@ -29,24 +29,40 @@
         </div>
       </div>
     </b-collapse>
-    <b-button type="is-primary" class="load-more-btn height-90" expanded><span class="default-text-base font-weight-700">LOAD MORE</span></b-button>
+    <b-button
+      type="is-primary"
+      class="load-more-btn height-90"
+      expanded
+      @click="handleGetCollapsesData(5)"
+    >
+      <span class="default-text-base font-weight-700">LOAD MORE</span>
+    </b-button>
   </section>
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
   name: 'collapse',
 
-  props: {
-    collapsesData: {
-      type: Array,
-      required: true
+  data () {
+    return {
+      isOpen: 0,
+      nrOfItemsToLoad: 10,
+      collapsesData: []
     }
   },
 
-  data () {
-    return {
-      isOpen: 0
+  async created () {
+    await this.handleGetCollapsesData(0)
+  },
+
+  methods: {
+    async handleGetCollapsesData (loadMore) {
+      this.nrOfItemsToLoad += loadMore
+      const res = await axios.get('https://hook.integromat.com/syyhp9cj3ikey0hhi089wb3xjdy5d9s6')
+      this.collapsesData = res.data.response.splice(0, this.nrOfItemsToLoad)
     }
   }
 }

@@ -11,7 +11,7 @@
         </div>
       </div>
 
-      <FaqCollapse v-if="collapsesData.length > 0" :collapsesData="collapsesData" />
+      <FaqCollapse />
 
     <!--  usually i would do the loop here and pass the title and message to the props, but i did this because of buefy  -->
     </div>
@@ -19,7 +19,6 @@
 </template>
 
 <script>
-import axios from 'axios'
 import FaqCollapse from '@/components/FaqCollapse'
 
 export default {
@@ -30,19 +29,7 @@ export default {
 
   data () {
     return {
-      isOpen: 0,
-      collapsesData: []
-    }
-  },
-
-  async created () {
-    await this.handleGetCollapsesData()
-  },
-
-  methods: {
-    async handleGetCollapsesData () {
-      const res = await axios.get('https://hook.integromat.com/syyhp9cj3ikey0hhi089wb3xjdy5d9s6')
-      this.collapsesData = res.data.response.splice(0, 10)
+      isOpen: 0
     }
   }
 }
