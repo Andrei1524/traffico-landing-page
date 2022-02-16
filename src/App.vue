@@ -2,7 +2,7 @@
   <div id="app">
     <Top />
     <img v-animate-css="'slideInLeft'" src="@/assets/images/landing-truck.svg" alt="" class="truck position-relative">
-    <AboutUs />
+    <AboutUs/>
   </div>
 </template>
 
