@@ -3,15 +3,17 @@
     <Top />
     <img v-animate-css="'slideInLeft'" src="@/assets/images/landing-truck.svg" alt="" class="truck position-relative">
     <AboutUs/>
+    <Faq />
   </div>
 </template>
 
 <script>
 import Top from '@/components/Top'
 import AboutUs from '@/components/AboutUs'
+import Faq from '@/components/Faq'
 
 export default {
-  components: { Top, AboutUs }
+  components: { Top, AboutUs, Faq }
 }
 </script>
 
