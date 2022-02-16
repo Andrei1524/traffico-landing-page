@@ -11,21 +11,37 @@
         </div>
       </div>
 
-      <div class="faq-collapses">
-        <FaqCollapse />
-      </div>
+      <FaqCollapse v-if="collapsesData.length > 0" :collapsesData="collapsesData" />
     </div>
   </section>
 </template>
 
 <script>
-
+import axios from 'axios'
 import FaqCollapse from '@/components/FaqCollapse'
 
 export default {
   name: 'Faq',
   components: {
     FaqCollapse
+  },
+
+  data () {
+    return {
+      isOpen: 0,
+      collapsesData: []
+    }
+  },
+
+  async created () {
+    await this.handleGetCollapsesData()
+  },
+
+  methods: {
+    async handleGetCollapsesData () {
+      const res = await axios.get('https://hook.integromat.com/syyhp9cj3ikey0hhi089wb3xjdy5d9s6')
+      this.collapsesData = res.data.response.splice(0, 10)
+    }
   }
 }
 </script>
