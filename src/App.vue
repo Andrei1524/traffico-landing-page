@@ -1,9 +1,23 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <Top />
+    <img v-animate-css="'slideInLeft'" src="@/assets/images/landing-truck.svg" alt="" class="truck position-relative">
   </div>
 </template>
+
+<script>
+import Top from '@/components/Top'
+
+export default {
+  components: { Top }
+}
+</script>
+
+<style lang="scss">
+.landing-scene-image {
+  position: absolute;
+  left: 0;
+  left: -8px;
+  top: 0;
+}
+</style>

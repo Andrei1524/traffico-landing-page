@@ -1,0 +1,21 @@
+.header, .top {
+  .navbar {
+    background-color: transparent;
+  }
+
+  .navbar-item, .navbar-link {
+    color: $default-text;
+    letter-spacing: 0.05em;
+  }
+
+  .default-btn {
+    background-color: $default-base;
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: 0.05em;
+    padding: 29px 25px;
+  }
+}
+
+.default-text {
+  color: $default-text;
+}
