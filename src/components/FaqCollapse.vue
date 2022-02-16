@@ -29,6 +29,7 @@
         </div>
       </div>
     </b-collapse>
+    <b-button type="is-primary" class="load-more-btn height-90" expanded><span class="default-text-base font-weight-700">LOAD MORE</span></b-button>
   </section>
 </template>
 
@@ -51,7 +52,9 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+@import '@/assets/variables.scss';
+
 .faq-collapses {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -60,5 +63,9 @@ export default {
 
 .max-height-90 {
   max-height: 90px;
+}
+
+.load-more-btn {
+  background-color: $default-base-opacity !important;
 }
 </style>
