@@ -1,5 +1,6 @@
 <template>
   <section class="faq-collapses">
+    <b-loading :is-full-page="false" v-model="loading" :can-cancel="true"></b-loading>
     <b-collapse
       class="card"
       :class="{'max-height-90': isOpen !== index}"
@@ -50,7 +51,8 @@ export default {
     return {
       isOpen: 0,
       nrOfItemsToLoad: 10,
-      collapsesData: []
+      collapsesData: [],
+      loading: false
     }
   },
 
@@ -60,9 +62,11 @@ export default {
 
   methods: {
     async handleGetCollapsesData (loadMore) {
+      this.loading = true
       this.nrOfItemsToLoad += loadMore
       const res = await axios.get('https://hook.integromat.com/syyhp9cj3ikey0hhi089wb3xjdy5d9s6')
       this.collapsesData = res.data.response.splice(0, this.nrOfItemsToLoad)
+      this.loading = false
     }
   }
 }
