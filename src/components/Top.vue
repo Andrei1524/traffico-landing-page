@@ -39,18 +39,7 @@ export default {
 section {
   height: 100vh;
 }
-.intro {
-  padding-top: 90px;
 
-  h1 {
-    font-family: "DM Serif Display", serif;
-    line-height: 100%;
-  }
-}
-
-section {
-  height: 100vh;
-}
 .intro {
   padding-top: 90px;
 
@@ -67,3 +56,4 @@ section {
     transform: translateY(-50%);
   }
 }
+</style>
