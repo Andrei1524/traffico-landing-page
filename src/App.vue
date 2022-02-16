@@ -1,15 +1,23 @@
 <template>
   <div id="app">
-    <Header />
     <Top />
+    <img v-animate-css="'slideInLeft'" src="@/assets/images/landing-truck.svg" alt="" class="truck position-relative">
   </div>
 </template>
 
 <script>
-import Header from '@/components/Header'
 import Top from '@/components/Top'
 
 export default {
-  components: { Top, Header }
+  components: { Top }
 }
 </script>
+
+<style lang="scss">
+.landing-scene-image {
+  position: absolute;
+  left: 0;
+  left: -8px;
+  top: 0;
+}
+</style>
