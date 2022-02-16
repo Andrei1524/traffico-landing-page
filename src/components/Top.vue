@@ -4,6 +4,7 @@
     <div class="container">
       <div class="intro">
         <h1 class="font-size-100px default-text">Your awesome traffic permit consultant.</h1>
+        <b-button type="is-primary" class="default-btn font-weight-700 mt-6">GET STARTED</b-button>
       </div>
     </div>
   </section>
