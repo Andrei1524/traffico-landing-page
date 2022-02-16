@@ -2,6 +2,7 @@
   <section class="faq-collapses">
     <b-collapse
       class="card"
+      :class="{'max-height-90': isOpen !== index}"
       animation="slide"
       v-for="(collapse, index) of collapsesData"
       :key="index"
@@ -55,5 +56,9 @@ export default {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
+}
+
+.max-height-90 {
+  max-height: 90px;
 }
 </style>
