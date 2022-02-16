@@ -1,6 +1,6 @@
 <template>
-  <section>
-    <img src="@/assets/images/landing-scene.svg" alt="" class="landing-scene-image">
+  <section class="top">
+    <img src="@/assets/images/landing-scene-cropped.svg" alt="" class="landing-scene-image">
     <div class="container">
       <div class="intro">
         <h1 class="font-size-100px default-text">Your awesome traffic permit consultant.</h1>
@@ -20,12 +20,12 @@ export default {
 <style lang="scss" scoped>
 .landing-scene-image {
   position: absolute;
-  left: 0;
+  left: -8px;
   top: 0;
 }
 
 .intro {
-  margin-top: 90px;
+  padding-top: 90px;
   max-width: 741px;
 
   h1 {

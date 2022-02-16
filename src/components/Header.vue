@@ -1,24 +1,24 @@
 <template>
   <div class="container">
     <div class="header">
-      <b-navbar>
+      <b-navbar :transparent="true">
         <template #brand>
-          <b-navbar-item tag="router-link" :to="{ path: '/' }">
+          <b-navbar-item tag="router-link" :to="{ path: '/' }" class="font-size-32px">
             TRAFICO.
           </b-navbar-item>
         </template>
 
         <template #end>
-          <b-navbar-item href="#">
+          <b-navbar-item href="#" class="ml-6">
             ABOUT
           </b-navbar-item>
-          <b-navbar-item href="#">
+          <b-navbar-item href="#" class="ml-6">
             HOW TO
           </b-navbar-item>
-          <b-navbar-item href="#">
+          <b-navbar-item href="#" class="ml-6">
             FAQS
           </b-navbar-item>
-          <b-navbar-item tag="div">
+          <b-navbar-item tag="div" class="ml-6">
             <div class="buttons">
               <a class="button is-primary">
                 CONTACT US
