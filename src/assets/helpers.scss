@@ -2,20 +2,28 @@
   position: relative;
 }
 
+.font-family-dm {
+  font-family: 'DM Serif Display', serif;
+}
+
 .max-width-470 {
   max-width: 470px;
 }
 
-.font-size-100px {
-  font-size: 100px;
+.font-size-24px {
+  font-size: 24px;
 }
 
 .font-size-32px {
   font-size: 32px;
 }
 
-.font-size-24px {
-  font-size: 24px;
+.font-size-48px {
+  font-size: 48px;
+}
+
+.font-size-100px {
+  font-size: 100px;
 }
 
 .font-weight-700 {
@@ -24,4 +32,8 @@
 
 .font-weight-500 {
   font-weight: 500;
+}
+
+.height-90 {
+  height: 90px !important;
 }

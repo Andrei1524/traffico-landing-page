@@ -16,6 +16,13 @@
   }
 }
 
+// COLLAPSE
+.faq-collapses {
+  .card-header {
+    height: 90px;
+  }
+}
+
 .default-text {
   color: $default-text;
 }
@@ -23,3 +30,8 @@
 .default-text-base {
   color: $default-base;
 }
+
+.default-text-brown {
+  color: $default-base-brown;
+}
+

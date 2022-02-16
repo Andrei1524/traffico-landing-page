@@ -9,9 +9,11 @@
     "CI": "npm run build"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
+    "aos": "^2.3.4",
+    "axios": "^0.26.0",
     "buefy": "^0.9.15",
     "core-js": "^3.6.5",
-    "v-animate-css": "0.0.5",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",
     "vuex": "^3.4.0"
