@@ -31,6 +31,7 @@
       </div>
     </b-collapse>
     <b-button
+      v-if="totalItemsLength !== collapsesData.length"
       type="is-primary"
       class="load-more-btn height-90"
       expanded
@@ -51,6 +52,7 @@ export default {
     return {
       isOpen: 0,
       nrOfItemsToLoad: 10,
+      totalItemsLength: 0,
       collapsesData: [],
       loading: false
     }
@@ -65,6 +67,7 @@ export default {
       this.loading = true
       this.nrOfItemsToLoad += loadMore
       const res = await axios.get('https://hook.integromat.com/syyhp9cj3ikey0hhi089wb3xjdy5d9s6')
+      this.totalItemsLength = res.data.response.length
       this.collapsesData = res.data.response.splice(0, this.nrOfItemsToLoad)
       this.loading = false
     }
