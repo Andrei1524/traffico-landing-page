@@ -97,7 +97,7 @@ export default {
   background-color: $default-base-opacity !important;
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 695px) {
   .faq-collapses {
     display: block;
 

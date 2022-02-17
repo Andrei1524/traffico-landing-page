@@ -51,9 +51,7 @@ section {
 
 @media only screen and (max-width: 600px) {
   .intro {
-    position: absolute !important;
-    top: 50%;
-    transform: translateY(-50%);
+    padding-top: 110px;
   }
 }
 </style>
