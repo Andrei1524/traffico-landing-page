@@ -3,7 +3,7 @@
     background-color: transparent;
   }
 
-  .navbar-item, .navbar-link, a, .title {
+  .navbar-item, .navbar-link .title {
     color: $default-text;
     letter-spacing: 0.05em;
   }
@@ -55,7 +55,6 @@
     background: #FFF7F5;
   }
 }
-
 
 // COLLAPSE
 .faq-collapses {
