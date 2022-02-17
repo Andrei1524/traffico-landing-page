@@ -26,3 +26,11 @@ body {
     border-bottom-left-radius: 3px;
   }
 }
+
+.info-box-transparent-bg {
+  background-color: transparent;
+
+  > p {
+    color: $default-text;
+  }
+}
