@@ -46,6 +46,15 @@
           </div>
         </div>
       </div>
+
+      <div class="columns">
+        <div class="column">
+          <a
+            href="#"
+            class="font-family-dm"
+          ><h3 class="title is-4 font-weight-500">TRAFICO.</h3></a>
+        </div>
+      </div>
     </div>
   </section>
 </template>
