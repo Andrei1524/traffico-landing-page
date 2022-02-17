@@ -99,17 +99,13 @@ section {
     content: "";
     position: absolute;
     display: block;
-    width: 85%;
+    width: 100%;
     height: 90%;
     top: 0;
     left: 0;
     background: #0F264C;
     border-top-right-radius: 100px;
   }
-}
-
-.container {
-  padding-right: 14em !important;
 }
 
 .truck {
@@ -120,5 +116,17 @@ section {
 
 .footer-navbar {
   margin-top: 160px;
+}
+
+@media only screen and (min-width: 1216px) {
+  .container {
+    padding-right: 14em !important;
+  }
+
+  section {
+    &:before {
+      width: 85%;
+    }
+  }
 }
 </style>
