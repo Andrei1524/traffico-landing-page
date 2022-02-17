@@ -35,11 +35,12 @@
             >
               <b-input
                 v-model="form.email"
+                placeholder="your email address"
                 type="email"
               />
             </b-field>
 
-            <div class="buttons">
+            <div class="buttons mt-4">
               <a class="button is-primary default-btn font-weight-700">
                 GET STARTED
               </a>
@@ -59,7 +60,7 @@ export default {
     return {
       form: {
         name: 'Hendrik Larsson',
-        email: 'Your email address'
+        email: null
       }
     }
   }
