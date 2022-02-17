@@ -47,7 +47,7 @@
         </div>
       </div>
 
-      <div class="columns footer-navbar is-flex is-vcentered is-justify-content-space-between">
+      <div class="columns is-mobile footer-navbar is-flex is-vcentered is-justify-content-space-between">
         <div class="column is-two-fifths">
           <a
             href="#"
@@ -55,7 +55,7 @@
           ><h3 class="title is-4 font-weight-500">TRAFICO.</h3></a>
         </div>
 
-        <div class="column">
+        <div class="column footer-navbar-right">
           <div class="is-flex is-justify-content-end">
             <a
               href="#"
@@ -137,6 +137,21 @@ section {
 
     &:before {
       width: 85%;
+      height: 90%;
+    }
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .footer-navbar-right {
+    a {
+      margin: 1em !important;
+    }
+  }
+
+  section {
+    &:before {
+      height: 100% !important;
     }
   }
 }
