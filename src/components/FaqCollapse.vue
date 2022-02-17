@@ -9,7 +9,7 @@
       v-for="(collapse, index) of collapsesData"
       :key="index"
       class="card"
-      :class="{'max-height-90': isOpen !== index}"
+      :class="{'max-height-90': isOpen !== index, 'card-shadow': isOpen === index}"
       animation="slide"
       :open="isOpen === index"
       @open="isOpen = index"
@@ -17,6 +17,7 @@
       <template #trigger="props">
         <div
           class="card-header"
+          :class="{'card-shadow': isOpen === index}"
           role="button"
           aria-controls="contentIdForA11y3"
         >
@@ -95,6 +96,10 @@ export default {
 
 .load-more-btn {
   background-color: $default-base-opacity !important;
+}
+
+.card-shadow {
+  box-shadow: 0px 7px 27px 0px #fcddd4ba !important;
 }
 
 @media only screen and (max-width: 695px) {
