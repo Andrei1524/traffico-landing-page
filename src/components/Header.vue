@@ -14,19 +14,19 @@
 
         <template #end>
           <b-navbar-item
-            href="#"
+            href="#about-us"
             class="font-weight-700 ml-6"
           >
             ABOUT
           </b-navbar-item>
           <b-navbar-item
-            href="#"
+            href="#about-us"
             class="font-weight-700 ml-6"
           >
             HOW TO
           </b-navbar-item>
           <b-navbar-item
-            href="#"
+            href="#faq"
             class="font-weight-700 ml-6"
           >
             FAQS
@@ -36,7 +36,10 @@
             class="ml-6"
           >
             <div class="buttons">
-              <a class="button is-primary default-btn font-weight-700">
+              <a
+                href="#footer"
+                class="button is-primary default-btn font-weight-700"
+              >
                 CONTACT US
               </a>
             </div>

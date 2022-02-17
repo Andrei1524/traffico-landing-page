@@ -1,5 +1,8 @@
 <template>
-  <section class="footer-section position-relative">
+  <section
+    id="footer"
+    class="footer-section position-relative"
+  >
     <div class="footer">
       <b-image
         :src="require('@/assets/images/footer-truckmobil.png')"

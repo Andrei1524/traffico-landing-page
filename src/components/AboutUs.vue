@@ -1,5 +1,8 @@
 <template>
-  <section class="about-us position-relative">
+  <section
+    id="about-us"
+    class="position-relative"
+  >
     <div class="container">
       <div class="about-us-rows">
         <div class="columns">

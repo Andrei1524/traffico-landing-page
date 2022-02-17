@@ -1,5 +1,8 @@
 <template>
-  <section class="top position-relative">
+  <section
+    id="top"
+    class="position-relative"
+  >
     <Header />
     <div class="container">
       <div class="intro position-relative max-width-700">

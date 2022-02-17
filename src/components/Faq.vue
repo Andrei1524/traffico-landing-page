@@ -1,5 +1,8 @@
 <template>
-  <section class="faq position-relative">
+  <section
+    id="faq"
+    class="position-relative"
+  >
     <div class="container">
       <div class="columns is-justify-content-space-between">
         <div class="column is-half">
