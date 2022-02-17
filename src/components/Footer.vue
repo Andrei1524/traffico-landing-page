@@ -73,13 +73,20 @@
         </div>
       </div>
     </div>
+    <Copyright />
   </section>
 </template>
 
 <script>
 
+import Copyright from '@/components/Copyright'
+
 export default {
   name: 'Top',
+  components: {
+    Copyright
+  },
+
   data () {
     return {
       form: {
