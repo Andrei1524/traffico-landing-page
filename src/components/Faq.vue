@@ -11,11 +11,11 @@
           </p>
         </div>
         <div class="column is-half">
-          <img
-            src="@/assets/images/landing-figure-faq.png"
-            alt=""
+          <b-image
+            :src="require('@/assets/images/landing-figure-faq.png')"
+            alt="landing figure faq"
             class="figure-1"
-          >
+          />
         </div>
       </div>
 
@@ -44,5 +44,4 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 </style>

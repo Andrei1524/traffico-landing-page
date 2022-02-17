@@ -96,4 +96,14 @@ export default {
 .load-more-btn {
   background-color: $default-base-opacity !important;
 }
+
+@media only screen and (max-width: 695px) {
+  .faq-collapses {
+    display: block;
+
+    .collapse {
+      margin-bottom: 20px;
+    }
+  }
+}
 </style>

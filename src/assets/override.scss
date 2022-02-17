@@ -1,4 +1,4 @@
-.header, .top {
+.header, .top, .about-us, .faq {
   .navbar {
     background-color: transparent;
   }
@@ -14,7 +14,20 @@
     letter-spacing: 0.05em;
     padding: 29px 25px;
   }
+
+  // remove burger menu navbar default bg
+  @media screen and (max-width: 1023px) {
+    .navbar-menu {
+      background-color: #fcddd461;
+    }
+  }
+
+  // override bulma container to have padding on mobile too..
+  .container {
+    padding: 0 20px;
+  }
 }
+
 
 // COLLAPSE
 .faq-collapses {

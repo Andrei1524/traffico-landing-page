@@ -1,13 +1,8 @@
 <template>
   <section class="top position-relative">
-    <img
-      src="@/assets/images/landing-scene-cropped.svg"
-      alt
-      class="landing-scene-image"
-    >
     <Header />
     <div class="container">
-      <div class="intro position-relative">
+      <div class="intro position-relative max-width-700">
         <h1
           class="font-size-100px default-text is-size-3-mobile"
         >
@@ -38,6 +33,11 @@ export default {
 <style lang="scss" scoped>
 section {
   height: 100vh;
+
+  background-image: url("../assets/images/landing-scene.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .intro {
@@ -51,9 +51,7 @@ section {
 
 @media only screen and (max-width: 600px) {
   .intro {
-    position: absolute !important;
-    top: 50%;
-    transform: translateY(-50%);
+    padding-top: 110px;
   }
 }
 </style>
