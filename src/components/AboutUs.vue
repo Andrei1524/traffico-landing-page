@@ -63,7 +63,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.about-us {
+#about-us {
   margin-top: 100px;
 }
 
