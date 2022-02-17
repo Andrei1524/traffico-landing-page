@@ -8,11 +8,6 @@
       data-aos-offset="300"
       data-aos-easing="ease-in-sine"
     />
-    <b-image
-      :src="require('@/assets/images/footer-bg.png')"
-      alt="footer-bg"
-      class="footer-bg"
-    />
     <div class="container">
       <div class="columns is-variable is-3-desktop is-vcentered">
         <div class="column is-two-fifths">
@@ -73,18 +68,23 @@ export default {
 <style lang="scss" scoped>
 section {
   height: 80vh;
+
+  &:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 85%;
+    height: 90%;
+    top: 0;
+    left: 0;
+    background: #0F264C;
+    border-top-right-radius: 100px;
+  }
 }
 
 .truck {
   position: absolute;
   top: -200px;
   left: 0;
-}
-
-.footer-bg {
-  position: absolute;
-  width: 100%;
-  left: -205px;
-  bottom: 100px;
 }
 </style>
