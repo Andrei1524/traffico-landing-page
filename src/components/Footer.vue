@@ -143,6 +143,15 @@ section {
 }
 
 @media only screen and (max-width: 769px) {
+  .footer-navbar {
+    flex-direction: column;
+    justify-content: center;
+
+    .column:first-child {
+      text-align: center;
+    }
+  }
+
   .footer-navbar-right {
     a {
       margin: 1em !important;
@@ -153,6 +162,12 @@ section {
     &:before {
       height: 100% !important;
     }
+  }
+}
+
+@media only screen and (max-width: 496px) {
+  section {
+    height: 100%;
   }
 }
 </style>
