@@ -9,10 +9,10 @@
       data-aos-easing="ease-in-sine"
     />
     <div class="container">
-      <div class="columns is-variable is-3-desktop is-vcentered">
+      <div class="columns is-variable is-3-desktop is-vcentered is-justify-content-space-between">
         <div class="column is-two-fifths">
           <div class="info-box info-box-transparent-bg mt-6">
-            <p>
+            <p class="font-size-24px">
               We provide traffic management consultants so you get started quickly, contact us for a quote today!
             </p>
           </div>
@@ -47,12 +47,29 @@
         </div>
       </div>
 
-      <div class="columns">
-        <div class="column">
+      <div class="columns footer-navbar is-flex is-vcentered is-justify-content-space-between">
+        <div class="column is-two-fifths">
           <a
             href="#"
             class="font-family-dm"
           ><h3 class="title is-4 font-weight-500">TRAFICO.</h3></a>
+        </div>
+
+        <div class="column">
+          <div class="is-flex is-justify-content-end">
+            <a
+              href="#"
+              class="mr-6"
+            ><h3 class="title is-6 font-weight-400">ABOUT</h3></a>
+            <a
+              href="#"
+              class="mr-6 ml-6"
+            ><h3 class="title is-6 font-weight-400">HOW TO</h3></a>
+            <a
+              href="#"
+              class="ml-6"
+            ><h3 class="title is-6 font-weight-400">FAQ</h3></a>
+          </div>
         </div>
       </div>
     </div>
@@ -76,7 +93,7 @@ export default {
 
 <style lang="scss" scoped>
 section {
-  height: 80vh;
+  height: 85vh;
 
   &:before {
     content: "";
@@ -91,9 +108,17 @@ section {
   }
 }
 
+.container {
+  padding-right: 14em !important;
+}
+
 .truck {
   position: absolute;
   top: -200px;
   left: 0;
+}
+
+.footer-navbar {
+  margin-top: 160px;
 }
 </style>
