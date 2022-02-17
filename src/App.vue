@@ -11,6 +11,7 @@
     >
     <AboutUs />
     <Faq />
+    <Footer />
   </div>
 </template>
 
@@ -18,9 +19,10 @@
 import Top from '@/components/Top'
 import AboutUs from '@/components/AboutUs'
 import Faq from '@/components/Faq'
+import Footer from '@/components/Footer'
 
 export default {
-  components: { Top, AboutUs, Faq },
+  components: { Top, AboutUs, Faq, Footer },
 
   data () {
     return {
