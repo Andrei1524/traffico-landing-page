@@ -70,6 +70,8 @@ export default {
 
   methods: {
     async handleGetCollapsesData (loadMore) {
+      // i'm calling this again on the btn. press to simulate a limit parameter on the endpoint
+
       this.loading = true
       this.nrOfItemsToLoad += loadMore
       const res = await axios.get('https://hook.integromat.com/syyhp9cj3ikey0hhi089wb3xjdy5d9s6')

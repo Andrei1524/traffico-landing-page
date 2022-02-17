@@ -22,9 +22,8 @@
         </div>
       </div>
 
+      <!--  usually i would do the loop here and pass the title and message to the props, but i did this because of buefy  -->
       <FaqCollapse />
-
-    <!--  usually i would do the loop here and pass the title and message to the props, but i did this because of buefy  -->
     </div>
   </section>
 </template>
