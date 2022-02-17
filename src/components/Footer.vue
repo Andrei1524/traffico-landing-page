@@ -14,7 +14,15 @@
       class="footer-bg"
     />
     <div class="container">
-      footer
+      <div class="columns">
+        <div class="column">
+          <div class="info-box info-box-transparent-bg mt-6">
+            <p>
+              We provide traffic management consultants so you get started quickly, contact us for a quote today!
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 </template>
