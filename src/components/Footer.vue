@@ -93,7 +93,7 @@ export default {
 
 <style lang="scss" scoped>
 section {
-  height: 85vh;
+  height: 100vh;
 
   &:before {
     content: "";
@@ -133,6 +133,8 @@ section {
   }
 
   section {
+    height: 85vh;
+
     &:before {
       width: 85%;
     }
