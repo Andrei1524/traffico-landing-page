@@ -124,6 +124,7 @@ export default {
   position: absolute;
   top: -200px;
   left: 0;
+  z-index: 2;
 }
 
 .footer-form {

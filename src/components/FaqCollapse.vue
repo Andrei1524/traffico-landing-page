@@ -97,7 +97,6 @@ export default {
 
 .load-more-btn {
   grid-column-end: b;
-  background-color: $default-base-opacity !important;
 }
 
 .card-shadow {
