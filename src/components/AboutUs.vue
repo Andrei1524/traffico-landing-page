@@ -2,7 +2,7 @@
   <section class="about-us position-relative">
     <div class="container">
       <div class="about-us-rows">
-        <div class="columns is-desktop">
+        <div class="columns">
           <div class="column is-half">
             <h2 class="default-text-base font-weight-700 font-size-24px mb-6">
               About us
@@ -27,7 +27,7 @@
             />
           </div>
         </div>
-        <div class="columns is-vcentered is-desktop">
+        <div class="columns is-vcentered">
           <div class="column is-half">
             <b-image
               :src="require('@/assets/images/landing-figure-about-2.svg')"
@@ -62,10 +62,6 @@ export default {
 <style lang="scss" scoped>
 .about-us {
   margin-top: 100px;
-}
-
-.figure-1 {
-  margin-top: -100px;
 }
 
 @media only screen and (max-width: 769px) {
