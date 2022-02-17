@@ -1,5 +1,8 @@
 <template>
-  <section class="about-us position-relative">
+  <section
+    id="about-us"
+    class="position-relative"
+  >
     <div class="container">
       <div class="about-us-rows">
         <div class="columns">
@@ -60,7 +63,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.about-us {
+#about-us {
   margin-top: 100px;
 }
 

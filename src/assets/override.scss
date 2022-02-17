@@ -1,9 +1,9 @@
-.header, .top, .about-us, .faq, .footer-section {
+.header, #top, #about-us, #faq, #footer {
   .navbar {
     background-color: transparent;
   }
 
-  .navbar-item, .navbar-link, a, .title {
+  .navbar-item, .navbar-link, .title {
     color: $default-text;
     letter-spacing: 0.05em;
   }
@@ -13,6 +13,10 @@
     font-family: 'Rubik', sans-serif;
     letter-spacing: 0.05em;
     padding: 29px 25px;
+  }
+
+  .load-more-btn {
+    background-color: #ee4d4742 !important;
   }
 
   // remove burger menu navbar default bg
@@ -45,8 +49,12 @@
   .label {
     font-weight: 500;
   }
-}
 
+  // override collapses
+  .card-content {
+    background: #FFF7F5;
+  }
+}
 
 // COLLAPSE
 .faq-collapses {

@@ -1,8 +1,11 @@
 <template>
-  <section class="faq position-relative">
+  <section
+    id="faq"
+    class="position-relative"
+  >
     <div class="container">
       <div class="columns is-justify-content-space-between">
-        <div class="column is-half">
+        <div class="column is-half is-align-self-center">
           <h2 class="default-text-base font-weight-700 font-size-24px mb-6">
             Faq
           </h2>
@@ -19,9 +22,8 @@
         </div>
       </div>
 
+      <!--  usually i would do the loop here and pass the title and message to the props, but i did this because of buefy  -->
       <FaqCollapse />
-
-    <!--  usually i would do the loop here and pass the title and message to the props, but i did this because of buefy  -->
     </div>
   </section>
 </template>
@@ -46,5 +48,22 @@ export default {
 <style lang="scss" scoped>
 section {
   margin-bottom: 250px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 90%;
+    height: 110%;
+    top: 0;
+    right: 0;
+    background: #FDEDE8;
+    border-top-left-radius: 100px;
+    z-index: -1;
+  }
+}
+
+.container {
+  z-index: 2;
 }
 </style>

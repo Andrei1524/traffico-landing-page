@@ -9,7 +9,7 @@
       v-for="(collapse, index) of collapsesData"
       :key="index"
       class="card"
-      :class="{'max-height-90': isOpen !== index}"
+      :class="{'max-height-90': isOpen !== index, 'card-shadow': isOpen === index}"
       animation="slide"
       :open="isOpen === index"
       @open="isOpen = index"
@@ -17,6 +17,7 @@
       <template #trigger="props">
         <div
           class="card-header"
+          :class="{'card-shadow': isOpen === index}"
           role="button"
           aria-controls="contentIdForA11y3"
         >
@@ -69,6 +70,8 @@ export default {
 
   methods: {
     async handleGetCollapsesData (loadMore) {
+      // i'm calling this again on the btn. press to simulate a limit parameter on the endpoint
+
       this.loading = true
       this.nrOfItemsToLoad += loadMore
       const res = await axios.get('https://hook.integromat.com/syyhp9cj3ikey0hhi089wb3xjdy5d9s6')
@@ -85,6 +88,7 @@ export default {
 
 .faq-collapses {
   display: grid;
+  grid-template: 'a b';
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
 }
@@ -94,7 +98,11 @@ export default {
 }
 
 .load-more-btn {
-  background-color: $default-base-opacity !important;
+  grid-column-end: b;
+}
+
+.card-shadow {
+  box-shadow: 0px 7px 27px 0px #fcddd4ba !important;
 }
 
 @media only screen and (max-width: 695px) {
