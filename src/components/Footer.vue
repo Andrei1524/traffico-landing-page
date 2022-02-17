@@ -14,12 +14,36 @@
       class="footer-bg"
     />
     <div class="container">
-      <div class="columns">
-        <div class="column">
+      <div class="columns is-variable is-3-desktop">
+        <div class="column is-two-fifths">
           <div class="info-box info-box-transparent-bg mt-6">
             <p>
               We provide traffic management consultants so you get started quickly, contact us for a quote today!
             </p>
+          </div>
+        </div>
+        <div class="column is-two-fifths">
+          <div class="box p-6">
+            <b-field label="Name">
+              <b-input v-model="form.name" />
+            </b-field>
+
+            <b-field
+              label="Email"
+              type="is-danger"
+              message="This email is invalid"
+            >
+              <b-input
+                v-model="form.email"
+                type="email"
+              />
+            </b-field>
+
+            <div class="buttons">
+              <a class="button is-primary default-btn font-weight-700">
+                GET STARTED
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -31,7 +55,13 @@
 
 export default {
   name: 'Top',
-  components: {
+  data () {
+    return {
+      form: {
+        name: 'Hendrik Larsson',
+        email: 'Your email address'
+      }
+    }
   }
 }
 </script>
@@ -49,7 +79,6 @@ section {
 
 .footer-bg {
   position: absolute;
-  height: 600px;
   width: 100%;
   left: -205px;
   bottom: 100px;
