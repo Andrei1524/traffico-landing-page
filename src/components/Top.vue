@@ -14,6 +14,7 @@
         <b-button
           type="is-primary"
           class="default-btn font-weight-700 mt-6"
+          @click="handleGetStarted"
         >
           GET STARTED
         </b-button>
@@ -24,11 +25,24 @@
 
 <script>
 import Header from '@/components/Header'
+import { MainController } from '@/controllers/main'
 
 export default {
   name: 'Top',
   components: {
     Header
+  },
+
+  data () {
+    return {
+      MainController
+    }
+  },
+
+  methods: {
+    handleGetStarted () {
+      MainController.getStarted(this)
+    }
   }
 }
 </script>

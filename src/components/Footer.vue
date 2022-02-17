@@ -43,7 +43,10 @@
               </b-field>
 
               <div class="buttons mt-4">
-                <a class="button is-primary default-btn font-weight-700">
+                <a
+                  class="button is-primary default-btn font-weight-700"
+                  @click="handleGetStarted"
+                >
                   GET STARTED
                 </a>
               </div>
@@ -83,7 +86,7 @@
 </template>
 
 <script>
-
+import { MainController } from '@/controllers/main'
 import Copyright from '@/components/Copyright'
 
 export default {
@@ -97,7 +100,15 @@ export default {
       form: {
         name: 'Hendrik Larsson',
         email: null
-      }
+      },
+
+      MainController
+    }
+  },
+
+  methods: {
+    handleGetStarted () {
+      MainController.getStarted(this)
     }
   }
 }
