@@ -86,6 +86,7 @@ export default {
 
 .faq-collapses {
   display: grid;
+  grid-template: 'a b';
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
 }
@@ -95,6 +96,7 @@ export default {
 }
 
 .load-more-btn {
+  grid-column-end: b;
   background-color: $default-base-opacity !important;
 }
 
