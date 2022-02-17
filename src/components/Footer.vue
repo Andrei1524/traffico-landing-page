@@ -14,7 +14,7 @@
       class="footer-bg"
     />
     <div class="container">
-      <div class="columns is-variable is-3-desktop">
+      <div class="columns is-variable is-3-desktop is-vcentered">
         <div class="column is-two-fifths">
           <div class="info-box info-box-transparent-bg mt-6">
             <p>
@@ -24,7 +24,10 @@
         </div>
         <div class="column is-two-fifths">
           <div class="box p-6">
-            <b-field label="Name">
+            <b-field
+              label="Name"
+              class="mb-5"
+            >
               <b-input v-model="form.name" />
             </b-field>
 
