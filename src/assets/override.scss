@@ -1,4 +1,4 @@
-.header, .top {
+.header, .top, .about-us, .faq {
   .navbar {
     background-color: transparent;
   }
@@ -21,7 +21,13 @@
       background-color: #fcddd461;
     }
   }
+
+  // override bulma container to have padding on mobile too..
+  .container {
+    padding: 0 20px;
+  }
 }
+
 
 // COLLAPSE
 .faq-collapses {
