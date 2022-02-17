@@ -1,6 +1,6 @@
 <template>
-  <div class="container">
-    <div class="columns is-vcentered is-justify-content-space-between">
+  <div class="container copyright">
+    <div class="columns is-mobile is-vcentered is-justify-content-space-between">
       <div class="column">
         <h4>Copyright</h4>
       </div>
@@ -32,3 +32,18 @@ export default {
   name: 'Copyright'
 }
 </script>
+
+<style lang="scss">
+@import '@/assets/variables.scss';
+
+.copyright {
+  padding-top: 27px !important;
+  padding-bottom: 27px !important;
+}
+
+@media only screen and (max-width: 769px) {
+  .copyright {
+    background-color: $background;
+  }
+}
+</style>
