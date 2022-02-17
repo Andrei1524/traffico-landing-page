@@ -9,8 +9,8 @@
       data-aos-easing="ease-in-sine"
     />
     <div class="container">
-      <div class="columns is-variable is-3-desktop is-vcentered is-justify-content-space-between">
-        <div class="column is-two-fifths">
+      <div class="columns footer-form is-variable is-3-desktop is-vcentered is-justify-content-space-between">
+        <div class="column is-two-fifths is-align-self-flex-end">
           <div class="info-box info-box-transparent-bg mt-6">
             <p class="font-size-24px">
               We provide traffic management consultants so you get started quickly, contact us for a quote today!
@@ -68,7 +68,7 @@
             <a
               href="#"
               class="ml-6"
-            ><h3 class="title is-6 font-weight-400">FAQ</h3></a>
+            ><h3 class="title is-6 font-weight-400">FAQS</h3></a>
           </div>
         </div>
       </div>
@@ -114,11 +114,20 @@ section {
   left: 0;
 }
 
+.footer-form {
+  position: relative;
+  top: unset;
+}
+
 .footer-navbar {
-  margin-top: 160px;
+  margin-top: 100px;
 }
 
 @media only screen and (min-width: 1216px) {
+  .footer-form {
+    top: -110px;
+  }
+
   .container {
     padding-right: 14em !important;
   }
