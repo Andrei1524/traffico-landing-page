@@ -6,17 +6,21 @@
     <div class="footer">
       <b-image
         :src="require('@/assets/images/footer-truckmobil.png')"
-        alt=""
+        alt
         class="truck position-relative"
         data-aos="fade-right"
         data-aos-offset="300"
         data-aos-easing="ease-in-sine"
       />
       <div class="container">
-        <div class="columns footer-form is-variable is-3-desktop is-vcentered is-justify-content-space-between">
+        <div
+          class="columns footer-form is-variable is-3-desktop is-vcentered is-justify-content-space-between"
+        >
           <div class="column is-two-fifths is-align-self-flex-end">
             <div class="info-box info-box-transparent-bg mt-6">
-              <p class="font-size-24px">
+              <p
+                class="font-size-24px"
+              >
                 We provide traffic management consultants so you get started quickly, contact us for a quote today!
               </p>
             </div>
@@ -46,20 +50,22 @@
                 <a
                   class="button is-primary default-btn font-weight-700"
                   @click="handleGetStarted"
-                >
-                  GET STARTED
-                </a>
+                >GET STARTED</a>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="columns is-mobile footer-navbar is-flex is-vcentered is-justify-content-space-between">
+        <div
+          class="columns is-mobile footer-navbar is-flex is-vcentered is-justify-content-space-between"
+        >
           <div class="column is-two-fifths">
             <a
               href="#"
               class="font-family-dm"
-            ><h3 class="title is-4 font-weight-500">TRAFICO.</h3></a>
+            >
+              <h3 class="title is-4 font-weight-500 word-break-keep-all">TRAFICO.</h3>
+            </a>
           </div>
 
           <div class="column footer-navbar-right">
@@ -67,15 +73,21 @@
               <a
                 href="#"
                 class="mr-6"
-              ><h3 class="title is-6 font-weight-400">ABOUT</h3></a>
+              >
+                <h3 class="title is-6 font-weight-400">ABOUT</h3>
+              </a>
               <a
                 href="#"
                 class="mr-6 ml-6"
-              ><h3 class="title is-6 font-weight-400">HOW TO</h3></a>
+              >
+                <h3 class="title is-6 font-weight-400">HOW TO</h3>
+              </a>
               <a
                 href="#"
                 class="ml-6"
-              ><h3 class="title is-6 font-weight-400">FAQS</h3></a>
+              >
+                <h3 class="title is-6 font-weight-400">FAQS</h3>
+              </a>
             </div>
           </div>
         </div>
@@ -116,8 +128,6 @@ export default {
 
 <style lang="scss" scoped>
 .footer {
-  height: 100vh;
-
   &:before {
     content: "";
     position: absolute;
@@ -126,7 +136,7 @@ export default {
     height: 90%;
     top: 0;
     left: 0;
-    background: #0F264C;
+    background: #0f264c;
     border-top-right-radius: 100px;
   }
 }
